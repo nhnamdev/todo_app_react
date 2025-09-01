@@ -1,3 +1,7 @@
+#Todo App (React)
+
+A simple and modern To-Do Application built with React.
+This project is designed to practice component-based architecture, state management, and responsive UI design.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
