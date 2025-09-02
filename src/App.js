@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import TodoList from './components/TodoList';
+import TextField from '@atlaskit/textfield';
+import Button from '@atlaskit/button/new';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <h1>Danh sách Việc Cần Làm</h1>
+      <div
+        style={{
+          marginBottom: '20px',
+          display: 'flex',
+          gap: '10px',
+          maxWidth: '500px',
+        }}
+      >
+        <TextField
+          name='add-todo'
+          placeholder='Thêm công việc mới...'
+          elemAfterInput={<Button appearance='primary'>Thêm</Button>}
+          css={{ padding: '2px 2px 2px 2px' }}
+        />
+   
+      </div>
+      <TodoList />
     </div>
   );
 }
